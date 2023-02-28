@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Cadastro</title>
+    <link rel="stylesheet" href="style0.css">
+    <link rel="shortcut icon" href="imagens/Pepsi-Logo.png" type="image/x-icon">
+</head>
+<body class="cadastro">
+    <img src="imagens/Pepsi-Logo.png" alt="logo" class="logo">
+    <header>
+        <ul>
+            <li><a href="index1.html">Início</a></li>
+            <li><a href="index3.html" target="_blank">Sobre nós</a></li>
+            <li><a href="index2.html" target="_blank">Cadastre-se</a></li>
+            <li><a href="#">Mais</a></li>
+        </ul>
+        
+    </header>
+
+    <main class="formulario">
+    <h1>Cadastro Pessoal</h1>
+    <form action="cadastro.php" method="post">
+           <p>
+                <label for="inome"> Nome (Nome completo):</label> 
+                <input type="text" name="nome" id="inome" maxlength="50" required>
+            </p>
+
+            <p>
+                <label for="iendereco"> Endereço (Rua):</label> 
+                <input type="text" name="endereco" id="iendereco" maxlength="50" required>
+            </p>
+
+            <p>
+                <label for="icep"> CPF (Digite somente os números):</label> 
+                <input type="cpf" name="cep" id="icep" minlength="8" required>
+            </p>
+
+            <p>
+                <label for="iemail">Email:</label> 
+                <input type="email" name="email" id="iemail" maxlength="50" required>
+            </p>
+
+            <p>
+                <label for="idata"> Data de hoje:</label> 
+                <input type="date" name="data" id="idata" required>
+            </p>
+
+            <p>
+                <label for="isenha"> Senha de acesso (Mínimo 5 dígitos):</label> 
+                <input type="password" name="senha" id="isenha" minlength="5" maxlength="20" required>
+            </p>
+
+            <p>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </p>
+    
+
+    </form>
+  
+    </main>
+    <footer>Redes Sociais:@pepsi.com <br> Termos de uso <br> Política de privacidade</footer>
+
+</body>
+</html>
